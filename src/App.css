@@ -1,14 +1,44 @@
+* {
+  margin: 0;
+}
+body {
+	min-height: 100vh;
+}
+.nono {
+	height: 100vh;
+}
 nav {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 nav a {
-  text-decoration: none;
-  color: cadetblue;
+	text-decoration: none;
+	color: cadetblue;
 }
 nav a:not(:last-child) {
-  margin-right: 1em;
+	margin-right: 1em;
 }
 header {
-  padding: .5rem 3rem;
+	padding: .5rem 3rem;
+}
+section {
+  background-color: cadetblue;
+  height: calc(100vh - 32px);
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+  position: absolute;
+	z-index: 1;
+	background-color: white;
+	left: 8px;
+  top: 39px;
+  width: 30%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
